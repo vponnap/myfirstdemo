@@ -9,7 +9,7 @@ public class MyuserController {
 
     @GetMapping("/hellovenka")
     public String getNames() {
-        return ( "Welcome Venka to Dockers and K8S, Jenkins");
+        return ( "Welcome Kanha to Dockers and K8S, Jenkins ");
     }
 
 
