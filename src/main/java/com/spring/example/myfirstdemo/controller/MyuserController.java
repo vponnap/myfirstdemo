@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MyuserController {
 
-    @GetMapping("/hellovenka")
+    @GetMapping("/hellodocker")
     public String getNames() {
-        return ( "Welcome Kanha to Dockers and K8S, Jenkins ");
+        return ( "Welcome to Dockers and K8S, Jenkins ");
     }
 
 
