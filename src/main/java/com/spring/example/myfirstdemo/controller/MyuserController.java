@@ -11,12 +11,17 @@ public class MyuserController {
 
     @GetMapping("/hellodocker")
     public String getNames() {
-        return ( "Welcome to Dockers and K8S, Jenkins ");
+        return ( "Welcome to Dockers");
     }
 
-    @GetMapping("/hellokanha")
-    public String getKanha() {
-        return ( "Welcome to Kanha and be safe ");
+    @GetMapping("/hellokubernetes")
+    public String getKubernetes() {
+        return ( "Welcome to K8s ");
+    }
+
+    @GetMapping("/hellojenkins")
+    public String getJenkins() {
+        return ( "Welcome to Jenkinss ");
     }
 
     @GetMapping("/getkanhadetails")
@@ -24,8 +29,12 @@ public class MyuserController {
         List<details> kanhadetails = new ArrayList<>();
          details d1 = new details( "THLC" , "School");
          details d2 = new details( "Kaivalya" , "Apartment");
+         details d3 = new details( "Meera" , "Houses");
+        details d4 = new details( "Farms" , "Fruits");
          kanhadetails.add(d1);
          kanhadetails.add(d2);
+        kanhadetails.add(d3);
+        kanhadetails.add(d4);
          return kanhadetails;
 
     }

@@ -45,7 +45,7 @@ group = 'com.spring.example.myfirstdemo'
 
 task buildDocker(type: Docker, dependsOn: build) {
 	baseImage = 'openjdk:8'
-	tagVersion = 'latest'
+	tagVersion = '5'
 	tag = 'vponnap/myfirstdemo'
 	addFile {
 		from jar
