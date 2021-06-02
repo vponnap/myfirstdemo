@@ -23,6 +23,8 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
@@ -45,7 +47,7 @@ group = 'com.spring.example.myfirstdemo'
 
 task buildDocker(type: Docker, dependsOn: build) {
 	baseImage = 'openjdk:8'
-	tagVersion = '5'
+	tagVersion = '6'
 	tag = 'vponnap/myfirstdemo'
 	addFile {
 		from jar

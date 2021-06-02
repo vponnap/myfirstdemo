@@ -2,6 +2,8 @@ package com.spring.example.myfirstdemo.controller;
 
 import com.spring.example.myfirstdemo.domain.details;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -11,18 +13,24 @@ public class MyuserController {
 
     @GetMapping("/hellodocker")
     public String getNames() {
-        return ( "Welcome to Dockers");
+        return ( "Welcome to Dockers Session");
     }
 
-    @GetMapping("/hellokubernetes")
+    @GetMapping("/hellok8s")
     public String getKubernetes() {
-        return ( "Welcome to K8s ");
+        return ( "Welcome to K8S ");
+    }
+
+    @GetMapping("/helloeks")
+    public String getEks() {
+        return ( "Welcome to AWS EKS ");
     }
 
     @GetMapping("/hellojenkins")
     public String getJenkins() {
         return ( "Welcome to Jenkinss ");
     }
+
 
     @GetMapping("/getkanhadetails")
     public List<details> getKanhaDetails() {
@@ -39,4 +47,9 @@ public class MyuserController {
 
     }
 
+    @GetMapping("/api/foos")
+    @ResponseBody
+    public String getFoos(@RequestParam(required = false) String id) {
+        return "ID: " + id;
+    }
 }
