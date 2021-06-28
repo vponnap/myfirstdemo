@@ -8,13 +8,13 @@ First, create a spring boot project with https://start.spring.io. Add the `Web` 
 artifactId to whatever you want. Here we set it to `spring.example` and `myfirstdemo`
 
 Generate the project and unzip it into your project directory. You probably want to initialize git, add a .gitignore and make your initial commit at this point.
-You should now have build.gradle file if you've selected a gradle project or pom.xml if it is maven.
+You should now have `build.gradle` file if you've selected a gradle project and `pom.xml` if it is maven.
 
 Next step is to make sure you have all your dependencies, here we are using JPA, mysql connecter and jdbc. You can checkout `build.gradle` file for configuration details. 
 
-Create CrossOrigin with `http://localhost:3000`, in MyuserController.
+Create CrossOrigin with `http://localhost:3000` in MyuserController.
 
-Update `application.properties` file with the database credentials. Before that make sure you have created a `user` schema and `details` table in the database.  
+Update `application.properties` file with the database credentials, but before that make sure you have created a `user` schema and `details` table in the database.  
 
 Now build the application
 
@@ -22,7 +22,7 @@ Now build the application
 $ gradlew clean build
 ```
 
-Once you run, the application will start on your local on port 8090. 
+Once you run, the application will start on local port 8090. 
 
 Springboot application: http://localhost:8090
 
