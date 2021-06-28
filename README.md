@@ -12,6 +12,8 @@ You should now have build.gradle file if you've selected a gradle project or pom
 
 Next step is to make sure you have all your dependencies, here we are using JPA, mysql connecter and jdbc. You can checkout `build.gradle` file for configuration details. 
 
+Create CrossOrigin with `http://localhost:3000`, in MyuserController.
+
 Update `application.properties` file with the database credentials. Before that make sure you have created a `user` schema and `details` table in the database.  
 
 Now build the application
@@ -34,6 +36,8 @@ $ npx create-react-app frontend
 Creating a new React app in \myfirstdemo\frontend
 
 Next step is th add the Components for the respective services. Create UserService to call the REST API. Here we are using axios as a HTTP client.
+
+Add `"proxy": "http://localhost:8090"` in `package.json`
 
 ```
 $ cd frontend
