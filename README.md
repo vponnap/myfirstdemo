@@ -48,10 +48,9 @@ You can now view frontend in the browser.
 
   Local:            http://localhost:3000/
 
-  Home page: http://localhost:3000/AddUser
+  Home page:        http://localhost:3000/AddUser
 
-  View details: http://localhost:3000/retrieve (frontened)
-  
-                http://localhost:8090/users (backend)
+  View details:     http://localhost:3000/retrieve (frontend),
+                    http://localhost:8090/users (backend)
 
   
