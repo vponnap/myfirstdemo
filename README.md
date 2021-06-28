@@ -1,7 +1,7 @@
 # myfirstdemo
 
 ## Prerequisites 
-* maven, npm and java, mysql. 
+* Gradle, npm and java, mysql. 
 
 ## Getting started
 First, create a spring boot project with https://start.spring.io. Add the `Web` dependency. Set the groupId and
